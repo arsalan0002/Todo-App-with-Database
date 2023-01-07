@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta na0me="viewport" content="width=device-width, initial-scale=1">
+    <title>TO-DO APP</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <div class="heading">
+            <h1>ToDo List</h1>
+        </div>
+        <div class="box">
+            <div class="inp-container">
+                <input type="text" name="" id="inp" autofocus placeholder="Write Something.......">
+                <button id="addBtn" onclick="saveValue()" class="add"><i onclick="saveValue()"
+                        class="fas fa-plus add-item"></i>Add</button>
+                <button id="delBtn" class="del" onclick="eraseAll()"><i onclick="eraseAll()"
+                        class="fas fa-trash-alt add-item deleteBtn"></i>Erase</button>
+            </div>
+        </div>
+
+        <div>
+            <ul id="main">
+
+            </ul>
+        </div>
+    </main>
+    <script type="module" src="app.js">
+    </script>
+
+</body>
+
+</html>
